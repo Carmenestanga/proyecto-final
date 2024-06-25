@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Nanum+Myeongjo&family=Poiret+One&display=swap');
+
+/* "Nanum Myeongjo"
+"Alex Brush"
+"Poiret One"  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Poiret One";
+    font-size: 1.1rem;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poiret One";
+    background-image:  url("../img/fondodepantalla2.jpg");
+}  
+
+h1 {
+    font-family: "Alex Brush";
+}
+
+h2 {
+    font-family: "Poiret One" ;
+    font-size: 3em;
+    color: #57198a;
+}
+
+h3,h4,h5,h6 {
+    font-family: "Poiret One" ;
+    font-weight: bold;
+}
+
+/*Cabecera*/
+img {
+    max-width: 100%;
+}
+
+.caja {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-caja {
+    background: #ccc;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.cabecera-img img {
+    height: auto;
+    width: 550px;
+    margin: auto;
+    display: block;
+    padding: 5px;    
+}
+
+.header {
+    display: flex;
+    min-height: 30vh;
+    background-color: #000000;
+    padding: 10px 0 0;
+
+    .caja .logo {
+        margin: 0;
+        height: 100px;
+        width: 200px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        padding: 0 100px;
+    }
+
+    .header-txt {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 170px;
+        line-height: 1;
+        color: #d3b3dd;
+    }
+
+    .header-txt p {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #644685;
+        font-family: "Poiret One" ;
+    }
+}
+
+/*Menu*/
+#ilustradora .container {
+    text-align: center;
+    padding: 150px 12px;
+    background: transparent;
+}
+
+.ilustration {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ilustration-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 15px);
+    background: transparent;
+    padding: 35px;
+}
+
+.ilustration-img img {
+    width: 250px;
+    }
+
+.ilustration-txt {
+    flex-basis: 50%;
+    text-align: center;
+
+    h3 {
+        color: #380d3d;
+        font-size: 35px;
+        margin: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #57198a;
+        transform: scale(1.03);
+        transition: ease .3s;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .header-txt {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 70px;
+    }
+
+    .ilustration-1 {
+        margin-bottom: 30px;
+    }
+
+    .ilustration-1 {
+        margin-bottom: 30px;
+    }
+
+    .cabecera-img img {
+        width: 100%;
+        height: auto;        
+    }
+    .ilustration-img img {
+        width: 100%;
+        width: auto;
+    }
+    .cabecera-img img {
+        height: auto;
+        width: 100%;       
+    }
+    
+}
+
+/* mis creaciones */
+/* .d-flex {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+
+    .contenedor-img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+
+/* .miscreaciones {
+    width: 50%;
+} */
+
+
+
+/* SECCION CONTACTO */
+.contacto {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .content-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: "Nanum Myeongjo";
+    font-weight: 100;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #5c5658;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*footer*/
+.footer {
+    padding: 50px 0;
+    background-color: #0a0a0a;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link a {
+    font-size: 16px;
+    color: #a99fb4;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .redes a:hover {
+    background-color: #5c5658;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and(max-width:700px) {
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
